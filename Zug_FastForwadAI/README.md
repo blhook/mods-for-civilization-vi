@@ -1,4 +1,6 @@
 # Fast Forward AI Turns
+![Logo Image](./FastForwardAI.png)
+
 ## General
 This mod modifies the settings so that whenever an AI player is playing their turn (including Barbarians and City States), they will utilize both Quick Combat and Quick Movement to speed things up. These settings will not be changed for any players. This is generally useful for when you want the slower movement/combat for you, but don't want to the AI turns to be slow.
 

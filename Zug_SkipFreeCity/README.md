@@ -1,4 +1,6 @@
 # Skip Free Cities From Loyalty Pressure
+![Logo Image](./SkipFreeCity_1.png)
+
 ## General
 This mod will skip the 'Free City' stage when Loyalty falls too low, and will instead give it to the Civilization that has the most Loyalty pressure to it. A city with no Loyalty pressure from a major civilization can still become a Free City.
 

@@ -1,4 +1,6 @@
 # No Resource Maintenance Cost for Inactive Units
+![Logo Image](./RefundInactive.png)
+
 ## General
 This mod will refund resource maintenance costs for units that do not perform any actions in a turn, effectively negating any resource costs associated with that unit. Gold maintenance costs remains unchanged.
 

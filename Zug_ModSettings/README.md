@@ -1,4 +1,6 @@
 # No Resource Maintenance Cost for Inactive Units -- Tactical Extension
+![Logo Image](./RefundInactive.png)
+
 ## General
 This is an extension to No Resource Maintenance Cost for Inactive Units
 https://steamcommunity.com/sharedfiles/filedetails/?id=1702672878, which updates the logic quite heavily and allows for easier customization of these settings. This mod does nothing by itself, and requires that mod to run properly.

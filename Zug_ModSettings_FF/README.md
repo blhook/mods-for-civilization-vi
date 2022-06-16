@@ -1,4 +1,6 @@
 # Fast Forward AI Turns -- Options Extension
+![Logo Image](./FastForwardAI.png)
+
 ## General
 This is an extension to Fast Forward AI Turns https://steamcommunity.com/sharedfiles/filedetails/?id=1787443465, which allows anyone to customize the settings of how the mod will behave in certain conditions
 
