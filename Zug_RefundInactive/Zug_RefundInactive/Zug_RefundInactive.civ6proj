@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>Zugaikotsu's No Resource Maintenance Cost for Inactive Units</Name>
+    <Guid>51a68e4a-a56a-4e85-8195-7ddce6f23025</Guid>
+    <ProjectGuid>b2d68c2e-e927-4523-9708-229787e04aa4</ProjectGuid>
+    <ModVersion>3</ModVersion>
+    <Teaser>Refunds resource maintenance for units that have not consumed any movement points.</Teaser>
+    <Description>This mod will refund resource maintenance costs for units that do not perform any actions in a turn, effectively negating any resource costs associated with that unit.</Description>
+    <AffectsSavedGames>false</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <InGameActionData><![CDATA[<InGameActions><AddGameplayScripts id="Zug_RefundInactive"><File priority="1">Lua/Zug_RefundInactive.lua</File></AddGameplayScripts><AddGameplayScripts id="Zug_RefundInactive_ModSettings"><File priority="1">Lua/Zug_RefundInactive_ModSettings.lua</File></AddGameplayScripts></InGameActions>]]></InGameActionData>
+    <AssemblyName>Test_Unit</AssemblyName>
+    <RootNamespace>Test_Unit</RootNamespace>
+    <Authors>Zugaikotsu</Authors>
+    <CompatibleVersions>2.0</CompatibleVersions>
+    <AssociationData><![CDATA[<Associations>
+  <Reference type="Mod" title="Tactical Extension" id="57e9060c-74db-415e-b0ec-313e551eb6d5" />
+</Associations>]]></AssociationData>
+    <FrontEndActionData><![CDATA[<FrontEndActions />]]></FrontEndActionData>
+    <ModProperties>
+      <CustomProperties xmlns="" />
+    </ModProperties>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Lua\Zug_RefundInactive.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Lua\Zug_RefundInactive_ModSettings.lua">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Lua" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>

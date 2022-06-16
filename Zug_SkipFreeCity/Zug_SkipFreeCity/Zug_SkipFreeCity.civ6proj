@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>Zugaikotsu's Skip Free Cities</Name>
+    <Guid>fc9c0f99-e3e4-44ee-8dd0-10a131e76847</Guid>
+    <ProjectGuid>56db0aec-a17a-4639-a37a-e21d802931f4</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Skips the Free City Stage of Loyalty Pressure</Teaser>
+    <Description>This mod will skip the 'Free City' stage when Loyalty falls too low, and will instead give it to the Civilization that has the most Loyalty pressure to it. A city with no Loyalty pressure from a major civilization can still become a Free City.[NEWLINE]In addition, this mod also changes Eleanor's Leader ability to compensate for the change above.</Description>
+    <Authors>Zugaikotsu</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AssociationData><![CDATA[<Associations>
+  <Dependency type="Dlc" title="Expansion: Gathering Storm" id="4873eb62-8ccc-4574-b784-dda455e74e68" />
+</Associations>]]></AssociationData>
+    <AssemblyName>Zug_SkipFreeCity</AssemblyName>
+    <RootNamespace>Zug_SkipFreeCity</RootNamespace>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="Zug_SkipFreeCity_DBInsert"><File priority="10">SQL/Zug_SkipFreeCities_EleanorBuffs.sql</File><File priority="11">SQL/Zug_SkipFreeCities_Main.sql</File></UpdateDatabase><UpdateText id="Zug_SkipFreeCity_TextUpdate_IG"><File priority="11">Text/Zug_SkipFreeCities_EleanorTextUpdate_en_US.sql</File></UpdateText></InGameActions>]]></InGameActionData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="Zug_SkipFreeCity_TextUpdate_FE"><File priority="11">Text/Zug_SkipFreeCities_EleanorTextUpdate_en_US.sql</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Text" />
+    <Folder Include="SQL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SQL\Zug_SkipFreeCities_Main.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Zug_SkipFreeCities_EleanorBuffs.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\Zug_SkipFreeCities_EleanorTextUpdate_en_US.sql">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
